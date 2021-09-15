@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.products-container {
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.products-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 3px solid black;
+    margin-top: 0;
+}
+
+.sno {
+    width: 10%;
+}
+
+.product {
+    width: 30%;
+}
+
+.name {
+    width: 20%;
+}
+
+.price {
+    width: 10%;
+}
+
+.quantity {
+    width: 10%;
+}
+
+.discount {
+    width: 15%;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Shopping cart</title>
+</head>
+
+<body style="background-color:#ebf3ff">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+            <div class="container-fluid">
+                <a class="fs-4 fw-bold" href="#">SHOPY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-3 me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn btn-primary" id="cart">
+                        <i class="fas fa-shopping-cart"><a href="cart.html" style="color:rgb(255, 253, 253); text-decoration: none;">Cart</a></i><span>0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class=" row justify-content-center mt-4">
+            <div class="col-md-8 col-lg-6">
+                <form class="d-flex">
+                    <input class="form-control me-2 shadow" type="search" placeholder="Search" aria-label="Search">
+                    <button class="shadow btn btn-outline-primary" type="submit">
+                        <i class="far fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container d-flex justify-content-center text-success">
+                <h3>Enjoy the products with 5% discount for each!</h3>
+            </div>
+        </section>
+        <section class="mt-4 shop-container row">
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        Protective supply products
+                    </div>
+                    <div class="card-body">
+                        <img src="masks.jpg" alt="an image" class="card-img" />
+                        <h5>Cotton Crescent Masks</h5>
+                        <h4>Set of 12 Masks</h4>
+                        <h3><span class="badge bg-warning">₹710.00</span></h3>
+                    </div>
+                    <div class="card-footer">
+                        <button id="cartAdd" class="btn btn-info float-end">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        Protective supply products
+                    </div>
+                    <div class="card-body">
+                        <img style="height:305px; width:305px; " src="phone.jpg" alt="an image" class="card-img" />
+                        <h5>Realme 8</h5>
+                        <h4>5G 128 GB, 4 GB RAM, Supersonic Black, Smartphone</h4>
+                        <h3><span class="badge bg-warning">₹15,499.00</span></h3>
+                    </div>
+                    <div class="card-footer">
+                        <button id="cartAdd" class="btn btn-info float-end">Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        Protective supply products
+                    </div>
+                    <div class="card-body">
+                        <img style="height:302px;" src="hearphones.jpg" alt="an image" class="card-img" />
+                        <h5>Full HD Android Smart LED TV</h5>
+                        <h4>Mi 108 cm (43 Inches) 4A PRO|L43M5-AN (Black)</h4>
+                        <h3><span class="badge bg-warning">₹26,999.00</span></h3>
+                    </div>
+                    <div class="card-footer">
+                        <button id="cartAdd" class="btn btn-info float-end">Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                <div class="card">
+                    <div class="card-header">
+                        Protective supply products
+                    </div>
+                    <div class="card-body">
+                        <img style="height:302px; width:302px;" src="headphone.jpg" alt="an image" class="card-img" />
+                        <h5>Headphone</h5>
+                        <h4>Bkack & White Plastic Wireless Hearphones, Model Name/Number: STL-63</h4>
+                        <h3><span class="badge bg-warning">₹640.00</span></h3>
+                    </div>
+                    <div class="card-footer">
+                        <button id="cartAdd" class="btn btn-info float-end">Add To Cart</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+</body>
